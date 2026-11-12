@@ -1,0 +1,72 @@
+{
+ "models": {
+  "Global average": {
+   "mae": 166.3,
+   "rmse": 214.5
+  },
+  "Per-item average": {
+   "mae": 114.4,
+   "rmse": 151.4
+  },
+  "Item x meal x weekday average": {
+   "mae": 103.9,
+   "rmse": 137.6
+  },
+  "Linear regression": {
+   "mae": 88.7,
+   "rmse": 115.1
+  },
+  "Gradient boosting": {
+   "mae": 81.5,
+   "rmse": 103.9
+  },
+  "Random forest (ours)": {
+   "mae": 83.0,
+   "rmse": 106.0
+  }
+ },
+ "policies": {
+  "Prep the item's average (par level)": {
+   "waste_units": 117704.34447885909,
+   "short_units": 111152.34541684914,
+   "waste_cost": 380717.4366814488,
+   "lost_margin": 1329581.6086828746,
+   "total": 1710299.0453643233,
+   "fill": 0.8038181055091282
+  },
+  "Prep the item's average + 10% cushion": {
+   "waste_units": 152890.03048154127,
+   "short_units": 89025.03151333028,
+   "waste_cost": 474394.31648620457,
+   "lost_margin": 1109040.3003377533,
+   "total": 1583434.6168239578,
+   "fill": 0.8428724173664874
+  },
+  "Item x meal x weekday average": {
+   "waste_units": 107251.39580928972,
+   "short_units": 100581.51442895271,
+   "waste_cost": 357963.7383690311,
+   "lost_margin": 1274961.0410022314,
+   "total": 1632924.7793712625,
+   "fill": 0.8224754324577503
+  },
+  "Our forecast, used as-is": {
+   "waste_units": 83797.04059696582,
+   "short_units": 82193.47632583714,
+   "waste_cost": 307782.5968069723,
+   "lost_margin": 1106489.1253306642,
+   "total": 1414271.7221376365,
+   "fill": 0.8549299896469027
+  },
+  "Our forecast + newsvendor buffer": {
+   "waste_units": 172580.0726883884,
+   "short_units": 35717.56625219145,
+   "waste_cost": 668888.9741072564,
+   "lost_margin": 410679.51511444966,
+   "total": 1079568.489221706,
+   "fill": 0.9369591366904619
+  }
+ },
+ "n_test": 2000,
+ "test_units": 566578.0
+}
