@@ -36,6 +36,13 @@ than our random forest on forecast error (81.5 vs 83.0). Limits: one year of pub
 data, sales rather than true demand, and no test in a real kitchen. Numbers come from
 `results/*.json`.
 
+## Front end
+
+`dashboard/dashboard.html` is the front end: a single self-contained page (Sales &
+Prep Planner). Open it in a browser, or view it live once GitHub Pages is on
+(Settings > Pages > Deploy from branch `main`, folder `/ (root)`):
+https://scupid-90.github.io/restaurant-demand-forecasting/
+
 ## Data
 
 Restaurant sales dataset from Kaggle: 10,000 rows, 13 columns, 50 restaurants,
